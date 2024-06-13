@@ -1,0 +1,13 @@
+import style from './StartScreen.module.css'
+
+const StartScree = ({ startGame }) => {
+    return (
+        <div className={style.start}>
+            <h1>Secret Word</h1>
+            <p>Clique no botão abaixo para começar</p>
+            <button onClick={startGame}>Começar o jogo</button>
+        </div>
+    )
+};
+
+export default StartScree;
