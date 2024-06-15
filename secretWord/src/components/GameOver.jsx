@@ -1,9 +1,10 @@
 import style from './GameOver.module.css';
 
-const GameOver = ({ reTry }) => {
+const GameOver = ({ reTry, score }) => {
     return (
         <div>
-            <h2>Cabou</h2>
+            <h1>Fim de jogo</h1>
+            <h2>A sua pontuação foi: <span>{score}</span></h2>
             <button onClick={reTry}>Tentar novamente</button>
         </div>
     )
